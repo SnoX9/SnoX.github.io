@@ -554,17 +554,20 @@ input, select, textarea {
 	}
 
 #header h1 {
-    font-size: 4.35em;
-    font-weight: 900;
-    letter-spacing: -0.035em;
-    line-height: 1.1em; /* Leicht erhöht für besseres Padding */
-    margin: 0 !important; /* Entfernt alle Standard-Außenabstände */
+    font-size: 4.35em !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.035em !important;
+    line-height: 1.1em !important;
+    margin: 0 auto 0.5em auto !important;
     
-    /* Der Rahmen - eng umschlossen */
-    border: 2px solid black; 
-    display: inline-block !important; /* Der entscheidende Befehl: Macht den Kasten nur so breit wie den Text */
-    padding: 10px 25px !important; /* Innenabstand: 10px oben/unten, 25px links/rechts */
-    border-radius: 8px; /* Leicht abgerundete Ecken */
+    /* Der Rahmen-Fix */
+    border: 3px solid black !important; 
+    display: inline-block !important; 
+    padding: 10px 30px !important;
+    border-radius: 10px !important;
+    
+    /* Sicherstellen, dass kein Hintergrund stört */
+    background: transparent !important;
 }
 
 		#header p {
